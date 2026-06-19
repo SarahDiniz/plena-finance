@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-radial from-gray-950 to-green-950 min-h-screen">
+
+ <main class="min-h-screen lg:grid lg:grid-cols-2">
+
+  <section class="flex items-center justify-center px-6 lg:-mr-30">
+
+  <div class="w-full max-w-2xl flex flex-col items-center lg:items-start lg:mx-auto">
+
+      <i
+      data-lucide="circle-check"
+      class="w-16 h-16 md:w-20 md:h-20 text-green-600 mb-4 mt-6">
+    </i>
+
+      <h2
+      class="font-['Black_Ops_One'] text-6xl md:text-7xl lg:text-9xl font-extrabold text-gray-200">
+      plena
+    </h2>
+
+      <h3
+      class="font-['Montserrat'] tracking-[0.35em] text-2xl md:text-3xl lg:text-4xl text-green-700 mt-2">
+      finance
+    </h3>
+
+
+      <!-- Slogan -->
+      <p class="text-white text-xl md:text-3xl font-light leading-tight text-center max-w-xl mt-6 ">
+
+      Sua vida financeira em
+      <span class="text-green-600 ">plena</span>
+
+      <span class="block">
+        evolução.
+      </span>
+
+    </p>
+    
+      <!-- Cards -->
+      <div class="flex flex-col md:flex-row gap-12 mt-12 w-full justify-center lg:justify-start">
+
+        <!-- Segurança -->
+        <div class="flex flex-col flex-1 min-w-50">
+          <div class="flex items-center gap-2">
+            <i data-lucide="shield" class="text-green-600"></i>
+
+            <h3 class="text-white text-xl font-semibold">
+              Segurança
+            </h3>
+          </div>
+
+          <p class="text-gray-400 text-base mt-2 max-w-100">
+            Seus dados protegidos com tecnologia de ponta.
+          </p>
+        </div>
+
+        <!-- Gestão -->
+        <div class="flex flex-col flex-1 min-w-55">
+          <div class="flex items-center gap-2">
+            <i data-lucide="chart-column" class="text-green-600"></i>
+
+            <h3 class="text-white text-xl font-semibold">
+              Gestão
+            </h3>
+          </div>
+
+          <p class="text-gray-400 text-base mt-2 max-w-60">
+            Tenha tudo sob controle onde estiver.
+          </p>
+        </div>
+
+        <!-- Objetivos -->
+        <div class="flex flex-col flex-1 min-w-55">
+          <div class="flex items-center gap-2">
+            <i data-lucide="target" class="text-green-600"></i>
+
+            <h3 class="text-white text-xl font-semibold">
+              Objetivos
+            </h3>
+          </div>
+
+          <p class="text-gray-400 text-base mt-2 max-w-48">
+            Alcance suas metas e realize seus sonhos.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="flex justify-center items-center p-6 lg:-ml-30">
+     <div
+    class="w-full max-w-md bg-gray-900/40 backdrop-blur-lg border border-gray-800 rounded-4xl p-8">
+
+    <!-- Título -->
+    <h2 class="text-white text-3xl font-bold text-center">
+      Bem-vindo!
+    </h2>
+
+    <p class="text-gray-400 text-center mt-3">
+      Entre para continuar sua jornada financeira.
+    </p>
+
+    <!-- E-mail -->
+    <div class="mt-10">
+
+      <label class="block text-gray-300 mb-2">
+        E-mail
+      </label>
+
+      <div
+        class="flex items-center  bg-gray-900 border border-gray-700 rounded-2xl px-4 py-4">
+
+        <i
+          data-lucide="mail"
+          class="text-gray-500 w-5 h-5">
+        </i>
+
+        <input
+          type="email"
+          placeholder="Digite seu e-mail"
+          class="bg-transparent outline-none text-white  ml-3 w-full">
+      </div>
+
+    </div>
+
+    <!-- Senha -->
+    <div class="mt-6">
+
+      <label class="block text-gray-300 mb-2">
+        Senha
+      </label>
+
+      <div
+        class="flex items-center bg-gray-900 border border-gray-700 rounded-2xl px-4 py-4">
+
+        <i
+          data-lucide="lock"
+          class="text-gray-500 w-5 h-5">
+        </i>
+
+        <input
+          type="password"
+          placeholder="Digite sua senha"
+          class="bg-transparent outline-none text-white ml-3 w-full">
+
+        <i
+          data-lucide="eye"
+          class="text-gray-500 w-5 h-5 cursor-pointer">
+        </i>
+
+      </div>
+
+    </div>
+
+    <!-- Esqueci a senha -->
+    <div class="flex justify-end mt-3">
+
+      <a
+        href="#"
+        class="text-green-600 text-sm hover:underline">
+
+        Esqueci minha senha
+
+      </a>
+
+    </div>
+
+    <!-- Botão -->
+    <button
+      class="w-full mt-8 py-4 rounded-2xl bg-green-600 text-black font-bold hover:bg-green-500 transition">
+
+      Entrar
+
+    </button>
+
+  </div>
+  </section>
+  </main>    
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
